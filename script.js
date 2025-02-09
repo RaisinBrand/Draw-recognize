@@ -10,6 +10,9 @@ canvas.height = window.innerHeight * 0.2;
 ctx.lineWidth = 3;
 ctx.lineCap = "round";
 
+
+
+
 canvas.addEventListener("mousedown", (e) => {
     drawing = true;
     currentStroke = [];
@@ -55,4 +58,5 @@ function undoStroke(){
 }
 
 
-document.getElementById("clearBtn").addEventListener("click", undoStroke)
+document.getElementById("clearBtn").addEventListener("click", clearCanvas)
+document.getElementById("undoBtn").addEventListener("click", undoStroke)
